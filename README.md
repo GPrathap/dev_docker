@@ -12,7 +12,7 @@ git clone git@github.com:GPrathap/dogtooth_bot.git
 cd git@github.com:GPrathap/dogtooth_bot.git
 docker-compose build --no-cache
 docker-compose up -d
-docker-compose exec main bash
+docker-compose exec dogtooth_core bash
 ```
 
 ### docker-compose
@@ -26,7 +26,7 @@ docker-compose down
 ```
 
 ```bash
-docker-compose exec --user root main bash
+docker-compose exec --user root dogtooth_core bash
 ```
 
 ### Inside the docker container 

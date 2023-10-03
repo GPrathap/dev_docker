@@ -6,7 +6,10 @@ __pycache__/
 /docker/ros2/.gazebo/*
 /data/*
 # ROS Workspace
-/dev_ws/*
+/dev_ws/build/*
+/dev_ws/install/*
+/dev_ws/log/*
+/dev_ws/src/*
 
 # Editor, IDE
 /.idea/

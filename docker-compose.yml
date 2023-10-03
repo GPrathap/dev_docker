@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  dogtooth:
+    build:
+      context: docker/ros2
+      args:
+        - user_id=1000
+        - ros_ws=/home/developer/dogtooth_ws
+
+    network_mode: host
+
+    # Enabling GPU access with Compose
+    # https://docs.docker.com/compose/gpu-support/
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #          - capabilities: [gpu]
+    #            count: all
+
+    environment:
+      - TERM=xterm-256color
+      - DISPLAY
+      - WAYLAND_DISPLAY
+      - XDG_RUNTIME_DIR
+      - PULSE_SERVER
+
+    volumes:
+      - ./data:/home/developer/data 
+      - ./dev_ws:/home/developer/dogtooth_ws
+      - ./docker/ros2/.ros:/home/developer/.ros
+      - ./docker/ros2/.gazebo/:/home/developer/.gazebo
+
+
+      - /mnt/wslg:/mnt/wslg
+      - /tmp/.X11-unix:/tmp/.X11-unix

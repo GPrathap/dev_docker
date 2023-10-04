@@ -8,8 +8,9 @@
 ## Getting started
 
 ```bash
-git clone git@github.com:GPrathap/dogtooth_bot.git
-cd git@github.com:GPrathap/dogtooth_bot.git
+git clone git@github.com:LCAS/dogtooth_docker.git
+cd dogtooth_docker
+git checkout main
 docker-compose build --no-cache
 docker-compose up -d
 docker-compose exec dogtooth_core bash
@@ -36,7 +37,10 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 #### set up the environment 
     mkdir -p /home/developer/dogtooth_ws/src 
     cd /home/developer/dogtooth_ws/src 
-    git clone git@github.com:GPrathap/aoc_gazebo_dogtooth.git 
+    git clone git@github.com:LCAS/aoc_gazebo_dogtooth.git
+    cd aoc_gazebo_dogtooth
+    git checkout dev_humble
+    cd ..
     mv aoc_gazebo_dogtooth Dogtooth
     cd ../
     colcon build 

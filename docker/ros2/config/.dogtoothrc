@@ -4,3 +4,4 @@ ROBOT_NAME="dogtooth_001"
 ROBOT_MODEL="dogtooth"
 SCENARIO_NAME="transportation_riseholme_polytunnel_sim"
 BASE_CONFIG_PATH=$DOGTOOTH_REPO/dogtooth_bringup/tmule
+ROS_DOMAIN_ID=200

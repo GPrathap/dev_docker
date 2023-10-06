@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     xterm \
     ros-${ROS_DISTRO}-navigation2 ros-${ROS_DISTRO}-nav2-* ros-${ROS_DISTRO}-gazebo-ros-pkgs \ 
     ros-${ROS_DISTRO}-turtlebot3-gazebo ros-${ROS_DISTRO}-nav2-costmap-2d ros-${ROS_DISTRO}-nav2-* \
-    ros-${ROS_DISTRO}-robot-localization ros-${ROS_DISTRO}-tf2-tools locate ros-${ROS_DISTRO}-nav2_*
+    ros-${ROS_DISTRO}-robot-localization ros-${ROS_DISTRO}-octomap* ros-${ROS_DISTRO}-tf2-tools locate ros-${ROS_DISTRO}-nav2_*
 #    && rm -rf /var/lib/apt/lists/*
 
 RUN pip install tmule==1.5.9

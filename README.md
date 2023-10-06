@@ -4,7 +4,13 @@
 
 * docker, docker compose, nvidia-docker container toolbox 
 * (Optional) WSLg
-
+* If you have GPU uncomment the following in the docker-compose.yml
+    ```deploy:
+      resources:
+        reservations:
+           devices:
+             - capabilities: [gpu]
+             -  count: all
 ## Getting started
 
 ```bash

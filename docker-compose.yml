@@ -30,6 +30,7 @@ services:
       - ./dev_ws:/home/developer/dogtooth_ws
       - ./docker/ros2/.ros:/home/developer/.ros
       - ./docker/ros2/.gazebo/:/home/developer/.gazebo
+      - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
       - /mnt/wslg:/mnt/wslg
       - /tmp/.X11-unix:/tmp/.X11-unix

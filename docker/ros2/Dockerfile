@@ -55,7 +55,7 @@ COPY ./config/.dogtoothrc /home/developer/
 
 RUN echo "source /home/developer/dogtooth_ws/install/setup.bash" >> ~/.bashrc
 RUN echo "source /home/developer/.dogtoothrc" >> ~/.bashrc
-RUN echo "source /home/developer/dogtooth_ws/src/Dogtooth/dogtooth_bringup/tmule/tmule_config/init_cmd_setup.sh" >> ~/.bashrc 
+RUN echo "source /home/developer/dogtooth_ws/src/Dogtooth/dogtooth/dogtooth_bringup/tmule/tmule_config/init_cmd_setup.sh" >> ~/.bashrc 
 RUN echo "source /home/developer/dogtooth_ws/src/Dogtooth/.runcom" >> ~/.bashrc
 RUN echo "alias dogtooth_tmule_cd='cd /home/developer/dogtooth_ws/src/Dogtooth/dogtooth_bringup/tmule/'" >> ~/.bashrc
 RUN echo "alias dogtooth_tmule_exec='tmule -c dogtooth-robot.yaml launch'"  >> ~/.bashrc

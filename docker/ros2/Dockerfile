@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
     ros-${ROS_DISTRO}-robot-localization ros-${ROS_DISTRO}-octomap* ros-${ROS_DISTRO}-tf2-tools locate ros-${ROS_DISTRO}-nav2_*
 #    && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get install -y ros-${ROS_DISTRO}-interactive*
+RUN apt-get install -y ros-${ROS_DISTRO}-interactive* ros-${ROS_DISTRO}-twist*
 RUN pip install tmule==1.5.9
 # Add a user with the same user_id as the user on the host
 ENV USER=developer

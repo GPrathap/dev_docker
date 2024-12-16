@@ -2,8 +2,8 @@
 __pycache__/
 
 # Docker container
-/docker/ros2/.ros/*
-/docker/ros2/.gazebo/*
+/docker/ros/.ros/*
+/docker/ros/.gazebo/*
 /data/*
 # ROS Workspace
 /dev_ws/build/*

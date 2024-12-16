@@ -1,4 +1,4 @@
-# Dogtooth docker container 
+# Development docker container 
 
 ## Prerequisites
 
